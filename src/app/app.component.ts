@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import Keycloak from 'keycloak-js';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProjectTester';
+
+  constructor(){
+
+  }
+
+async ngOnInit(){
+  
+  
+
+
+  }
 }
