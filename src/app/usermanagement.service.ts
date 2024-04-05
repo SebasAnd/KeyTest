@@ -14,7 +14,7 @@ export class UserManagementService {
       realm: 'myrealm',
       clientId: 'myclient'
   });
-  this.TokenInit();
+  
   }
 
   async TokenInit(){

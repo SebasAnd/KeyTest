@@ -6,9 +6,11 @@ export function initializeKeycloak(
     return () =>
       keycloak.init({
         config: {
-            url: 'http://localhost:8082/auth',
+            url: 'http://localhost:8082',
             realm: 'myrealm',
             clientId: 'myclient'
+        },initOptions: {
+          onLoad: 'check-sso'
         }
       });
 }
